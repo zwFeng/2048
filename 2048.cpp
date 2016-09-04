@@ -5,6 +5,7 @@
 #include <windows.h>
 using namespace std;
 int num[4][4];
+int a[4][4];
 bool test();
 int main() {
 	char again = 'a';
@@ -59,23 +60,23 @@ int main() {
 					t = 0;
 				}
 			}
-			printf ("\tï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×©ï¿½ï¿½ï¿½ï¿½×©ï¿½ï¿½ï¿½ï¿½×©ï¿½ï¿½ï¿½ï¿½ï¿½\n");
+			printf ("\t©³©¥©¥©×©¥©¥©×©¥©¥©×©¥©¥©·\n");
 			for (int i = 0; i < 4; i++) {
-				printf("\tï¿½ï¿½");
+				printf("\t©§");
 				for (int j = 0; j < 4; j++) {
 					if (num[i][j]) {
-						printf("%4dï¿½ï¿½", num[i][j]);
+						printf("%4d©§", num[i][j]);
 					}
 					else {
-						printf("    ï¿½ï¿½");
+						printf("    ©§");
 					}
 				}
 				printf("\n");
 				if (i == 3) {
-					printf ("\tï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß©ï¿½ï¿½ï¿½ï¿½ß©ï¿½ï¿½ï¿½ï¿½ß©ï¿½ï¿½ï¿½ï¿½ï¿½\n");
+					printf ("\t©»©¥©¥©ß©¥©¥©ß©¥©¥©ß©¥©¥©¿\n");
 				}
 				else {
-					printf ("\tï¿½Ç©ï¿½ï¿½ï¿½ï¿½ï©¥ï¿½ï¿½ï¿½ï©¥ï¿½ï¿½ï¿½ï©¥ï¿½ï¿½ï¿½ï¿½\n");
+					printf ("\t©Ç©¥©¥©ï©¥©¥©ï©¥©¥©ï©¥©¥©Ï\n");
 				}
 			}
 			char ch = _getch(); 
@@ -279,7 +280,6 @@ int main() {
 					}
 				}
 			}
-			//ï¿½ï¿½Ö¤ï¿½ï¿½Ï·ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
 			for (int i = 0; i < 4; i++) {
 				for (int j = 0; j < 4; j++) {
 					a[i][j] = num[i][j];
@@ -289,7 +289,6 @@ int main() {
 				endWay = false;
 				break;
 			}
-			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½Ï·ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ 
 			end = 2;
 			for (int i = 0; i < 4; i++) {
 				for (int j = 0; j < 4; j++) {
